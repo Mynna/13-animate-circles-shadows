@@ -25,6 +25,8 @@ body{
     border-radius: 50%;
     bottom: 0;
     left: 50%;
+
+    animation: shadow 10s linear infinite; 
 }
 .circle{
     width: 15px;
@@ -35,7 +37,7 @@ body{
     left: 50%;
     top: 50%;
 
-    animation: anim 2s linear infinite;
+    animation: anim 10s linear infinite;
 }
 .circle:nth-child(2){
     display: none;
@@ -62,6 +64,34 @@ body{
     100%{
         transform-origin: -300% 50%;
         transform: rotate(-360deg);
+    }
+    
+}
+@keyframes shadow {
+    0%{}
+    12.5%{
+        transform: translate(50px);
+    }
+    25%{
+        transform: translate(110px);
+    }
+    37.5%{
+        transform: translate(50px);
+    }
+    50%{
+        transform: translate(0);
+    }
+    62.5%{
+        transform: translate(-50px);
+    }
+    75%{
+        transform: translate(-110px);
+    }
+    87.5%{
+        transform: translate(-50px);
+    }
+    100%{
+        transform: translate(0);
     }
     
 }
