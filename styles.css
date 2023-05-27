@@ -16,7 +16,7 @@ body{
     transform: translate(-50%, -50% );
 
 }
-.circle-container::after{
+.circle-container:after{
     content: '';
     width: 20px;
     height: 5px;
@@ -27,8 +27,16 @@ body{
     left: 50%;
     opacity: 0.4;
 
-    animation: shadow 10s linear infinite; 
+    animation: shadow 2s linear infinite; 
 }
+.circle-container:nth-child(2)::after{
+    animation-delay: -0.6s;
+}
+
+.circle-container:nth-child(3)::after{
+    animation-delay: -0.3s;
+}
+
 .circle{
     width: 15px;
     height: 15px;
